@@ -65,6 +65,11 @@ export const ResponsiveWrapper = styled.div`
   }
 `;
 
+export const TwoButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 export const StyledLogo = styled.img`
   width: 200px;
   @media (min-width: 767px) {
@@ -75,16 +80,16 @@ export const StyledLogo = styled.img`
 `;
 
 export const StyledImg = styled.img`
-  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
-  background-color: var(--accent);
+  // box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
+  // border: 4px dashed var(--secondary);
+  // background-color: var(--accent);
   border-radius: 100%;
   width: 200px;
   @media (min-width: 900px) {
-    width: 250px;
+    width: 300px;
   }
   @media (min-width: 1000px) {
-    width: 300px;
+    width: 400px;
   }
   transition: width 0.5s;
 `;
@@ -201,11 +206,16 @@ function App() {
         style={{ padding: 24, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
-        <s.SpacerSmall />
+        {/* <StyledLogo alt={"logo"} src={"/config/images/logo.png"} /> */}
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+            <StyledImg alt={"example"} src={"/config/images/AV1.png"} />
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -240,6 +250,12 @@ function App() {
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
             </s.TextDescription>
+            <s.SpacerSmall />
+            <TwoButtonWrapper>
+              <StyledButton onClick={(e) => {}}>RoadMap</StyledButton>
+              <s.SpacerSmall />
+              <StyledButton onClick={(e) => {}}>Opensea</StyledButton>
+            </TwoButtonWrapper>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
@@ -373,7 +389,7 @@ function App() {
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
               alt={"example"}
-              src={"/config/images/example.gif"}
+              src={"/config/images/AV2.png"}
               style={{ transform: "scaleX(-1)" }}
             />
           </s.Container>
