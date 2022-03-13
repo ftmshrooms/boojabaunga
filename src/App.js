@@ -150,7 +150,7 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit PaintSwap or NFTKEY to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -252,9 +252,9 @@ function App() {
             </s.TextDescription>
             <s.SpacerSmall />
             <TwoButtonWrapper>
-              <StyledButton onClick={(e) => {}}>RoadMap</StyledButton>
+              <StyledButton onClick={(e) => {}}>PaintSwap</StyledButton>
               <s.SpacerSmall />
-              <StyledButton onClick={(e) => {}}>Opensea</StyledButton>
+              <StyledButton onClick={(e) => {}}>NFTKEY</StyledButton>
             </TwoButtonWrapper>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
