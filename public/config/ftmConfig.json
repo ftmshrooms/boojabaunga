@@ -2,18 +2,18 @@
     "CONTRACT_ADDRESS": "0x10f053DA7734734A7714d3A403f098B352f8DD46",
     "SCAN_LINK": "https://testnet.ftmscan.com/address/0x10f053da7734734a7714d3a403f098b352f8dd46",
     "NETWORK": {
-      "NAME": "Fantom Network",
+      "NAME": "Fantom",
       "SYMBOL": "FTM",
       "ID": 4002
     },
-    "NFT_NAME": "Emoki Token",
-    "SYMBOL": "EMOKI",
+    "NFT_NAME": "Shroomoki Tribe Token",
+    "SYMBOL": "Emoki",
     "MAX_SUPPLY": 1000,
     "WEI_COST": 10000000000000000,
     "DISPLAY_COST": 0.01,
     "GAS_LIMIT": 285000,
-    "MARKETPLACE": "NFTKEY",
-    "MARKETPLACE_LINK": "https://nftkey.app",
+    "MARKETPLACE": "Opeansea",
+    "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
     "SHOW_BACKGROUND": true
   }
   

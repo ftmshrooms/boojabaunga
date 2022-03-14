@@ -5,6 +5,11 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 
+import './icons.css'
+import { FaTwitter } from 'react-icons/fa'
+import { FaDiscord } from 'react-icons/fa'
+import { FaMediumM } from 'react-icons/fa'
+
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
 
@@ -150,7 +155,7 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit PaintSwap or NFTKEY to view it.`
+          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -252,9 +257,9 @@ function App() {
             </s.TextDescription>
             <s.SpacerSmall />
             <TwoButtonWrapper>
-              <StyledButton onClick={(e) => {}}>PaintSwap</StyledButton>
+              <a href="https://paintswap.finance/"><StyledButton onClick={(e) => {}}>PaintSwap</StyledButton></a>
               <s.SpacerSmall />
-              <StyledButton onClick={(e) => {}}>NFTKEY</StyledButton>
+              <a href="https://nftkey.app/"><StyledButton onClick={(e) => {}}>NFTKEY</StyledButton></a>
             </TwoButtonWrapper>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
@@ -385,7 +390,9 @@ function App() {
             )}
             <s.SpacerMedium />
           </s.Container>
+          
           <s.SpacerLarge />
+          
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
               alt={"example"}
@@ -393,31 +400,15 @@ function App() {
               style={{ transform: "scaleX(-1)" }}
             />
           </s.Container>
+          
         </ResponsiveWrapper>
+        <div className="icons">
+            <a href="https://twitter.com/boojabaunga"><FaTwitter className="fa fa-twitter"  /></a>
+            <a href="https://twitter.com/boojabaunga"><FaDiscord className="fa fa-discord"/></a>
+            <a href="https://twitter.com/boojabaunga"><FaMediumM className="fa fa-medium"/></a>
+        </div>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
-          </s.TextDescription>
-          <s.SpacerSmall />
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
-          </s.TextDescription>
-        </s.Container>
+
       </s.Container>
     </s.Screen>
   );
