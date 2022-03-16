@@ -404,8 +404,8 @@ function App() {
         </ResponsiveWrapper>
         <div className="icons">
             <a href="https://twitter.com/boojabaunga"><FaTwitter className="fa fa-twitter"  /></a>
-            <a href="https://twitter.com/boojabaunga"><FaDiscord className="fa fa-discord"/></a>
-            <a href="https://twitter.com/boojabaunga"><FaMediumM className="fa fa-medium"/></a>
+            <a href="https://discord.gg/rd87Y5MVEf"><FaDiscord className="fa fa-discord"/></a>
+            <a href="https://medium.com/@purenftgems/emoki-token-mint-d4abe537ed42"><FaMediumM className="fa fa-medium"/></a>
         </div>
         <s.SpacerMedium />
 
