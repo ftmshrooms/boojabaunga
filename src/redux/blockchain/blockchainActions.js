@@ -34,14 +34,14 @@ const updateAccountRequest = (payload) => {
 export const connect = () => {
   return async (dispatch) => {
     dispatch(connectRequest());
-    const abiResponse = await fetch("/config/ftmAbi.json", {
+    const abiResponse = await fetch("/config/ftmMainnetAbi.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
     });
     const abi = await abiResponse.json();
-    const configResponse = await fetch("/config/ftmConfig.json", {
+    const configResponse = await fetch("/config/ftmMainnet.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

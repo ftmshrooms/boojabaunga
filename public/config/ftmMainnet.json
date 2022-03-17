@@ -1,0 +1,19 @@
+{
+    "CONTRACT_ADDRESS": "0xE9Fe0037d822ec4a7442be6B377b5aDdc04857EA",
+    "SCAN_LINK": "https://ftmscan.com/address/0xE9Fe0037d822ec4a7442be6B377b5aDdc04857EA",
+    "NETWORK": {
+      "NAME": "Fantom Opera",
+      "SYMBOL": "FTM",
+      "ID": 250
+    },
+    "NFT_NAME": "Shroomoki Tribe Token",
+    "SYMBOL": "Emoki",
+    "MAX_SUPPLY": 1000,
+    "WEI_COST": 10000000000000000,
+    "DISPLAY_COST": 40,
+    "GAS_LIMIT": 285000,
+    "MARKETPLACE": "Opeansea",
+    "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
+    "SHOW_BACKGROUND": true
+  }
+  
