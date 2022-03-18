@@ -6,14 +6,14 @@
       "SYMBOL": "FTM",
       "ID": 250
     },
-    "NFT_NAME": "Shroomoki Tribe Token",
-    "SYMBOL": "Emoki",
+    "NFT_NAME": "Emoki Token",
+    "SYMBOL": "EMOKI",
     "MAX_SUPPLY": 1285,
     "WEI_COST": 40000000000000000000,
     "DISPLAY_COST": 40,
     "GAS_LIMIT": 285000,
-    "MARKETPLACE": "Opeansea",
-    "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
+    "MARKETPLACE": "NFTKEY",
+    "MARKETPLACE_LINK": "https://nftkey.app",
     "SHOW_BACKGROUND": true
   }
   
