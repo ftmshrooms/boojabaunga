@@ -257,9 +257,9 @@ function App() {
             </s.TextDescription>
             <s.SpacerSmall />
             <TwoButtonWrapper>
-              <a href="https://paintswap.finance/"><StyledButton onClick={(e) => {}}>PaintSwap</StyledButton></a>
+              <a href="https://tofunft.com/discover/items?contracts=18067&network=250"><StyledButton onClick={(e) => {}}>TofuNFT</StyledButton></a>
               <s.SpacerSmall />
-              <a href="https://nftkey.app/"><StyledButton onClick={(e) => {}}>NFTKEY</StyledButton></a>
+              <a href="https://nftkey.app/collections/emoki/"><StyledButton onClick={(e) => {}}>NFTKEY</StyledButton></a>
             </TwoButtonWrapper>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
