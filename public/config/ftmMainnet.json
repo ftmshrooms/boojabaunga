@@ -8,7 +8,7 @@
     },
     "NFT_NAME": "Shroomoki Tribe Token",
     "SYMBOL": "Emoki",
-    "MAX_SUPPLY": 1000,
+    "MAX_SUPPLY": 1285,
     "WEI_COST": 40000000000000000000,
     "DISPLAY_COST": 40,
     "GAS_LIMIT": 285000,
